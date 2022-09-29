@@ -14,9 +14,8 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableDiscoveryClient
 @EnableFeignClients
 @MapperScan("com.atguigu.staservice.mapper")
-@EnableScheduling
-//开启事务，在Springboot的启动类，或者某个@Configuration的类上加上
-@EnableTransactionManagement
+@EnableScheduling//开启定时任务
+@EnableTransactionManagement//开启事务，在Springboot的启动类，或者某个@Configuration的类上加上
 public class StaApplication {
 
     public static void main(String[] args) {
