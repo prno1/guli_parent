@@ -1,10 +1,10 @@
 package com.atguigu.staservice.controller;
 
 
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.RequestMapping;
-
-import org.springframework.web.bind.annotation.RestController;
+import com.atguigu.commonutils.R;
+import com.atguigu.staservice.service.StatisticsDailyService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * <p>
@@ -18,6 +18,14 @@ import org.springframework.web.bind.annotation.RestController;
 @CrossOrigin
 @RequestMapping("/staservice/sta")
 public class StatisticsDailyController {
+    @Autowired
+    private StatisticsDailyService staService;
 
+    //统计某一天注册人数,生成统计数据
+    @PostMapping("registerCount/{day}")
+    public R registerCount(@PathVariable String day) {
+        staService.registerCount(day);
+        return R.ok();
+    }
 }
 
