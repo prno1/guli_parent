@@ -9,6 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * 数据统计模块
+ * */
 @SpringBootApplication
 @ComponentScan(basePackages = {"com.atguigu"})
 @EnableDiscoveryClient

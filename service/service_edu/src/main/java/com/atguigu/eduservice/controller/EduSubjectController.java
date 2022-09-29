@@ -20,7 +20,7 @@ import java.util.List;
  * @since 2022-09-21
  */
 @RestController
-@CrossOrigin  //解决跨域
+//@CrossOrigin  //解决跨域
 @RequestMapping("/eduservice/subject")
 public class EduSubjectController {
     @Autowired

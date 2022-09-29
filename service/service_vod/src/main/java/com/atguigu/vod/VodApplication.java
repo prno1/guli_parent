@@ -7,6 +7,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
+ * 视频模块
  * @author pengr
  * @date 2022/9/23 14:37
  */

@@ -8,6 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 
 /**
+ * 订单模块
  * @author pengr
  * @date 2022/9/28 17:15
  */
